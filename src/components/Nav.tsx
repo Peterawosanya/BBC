@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
-import { Menu, X, Disc3 } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import { profile } from '@/data/content';
 import { scrollToId } from '@/lib/motion';
 
 const links = [
@@ -38,9 +39,11 @@ export default function Nav() {
           className="group flex items-center gap-3 text-left"
           aria-label="Back to top"
         >
-          <span className="grid h-9 w-9 place-items-center rounded-full bg-amber-400 text-ink-950 transition-transform duration-500 group-hover:rotate-180">
-            <Disc3 size={18} strokeWidth={2.2} />
-          </span>
+          <img
+            src={profile.logo}
+            alt="Billionaire Boys Crew logo"
+            className="h-10 w-10 rounded-full border border-amber-400/40 object-cover transition-transform duration-500 group-hover:scale-105"
+          />
           <span className="hidden font-display text-sm font-semibold uppercase tracking-[0.25em] text-white sm:block">
             Temitope <span className="text-amber-400">Emmanuel</span>
           </span>
@@ -51,7 +54,7 @@ export default function Nav() {
             <li key={l.id}>
               <button
                 onClick={() => go(l.id)}
-                className="relative text-[13px] font-medium uppercase tracking-[0.18em] text-zinc-400 transition-colors hover:text-white after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-amber-400 after:transition-all after:duration-300 hover:after:w-full"
+                className="relative text-[13px] font-medium uppercase tracking-[0.18em] text-zinc-400 transition-colors hover:text-white after:absolute after:-bottom-1.5 after:left-0 after:h-px after:w-0 after:bg-amber-400 after:transition-all hover:after:w-full"
               >
                 {l.label}
               </button>
