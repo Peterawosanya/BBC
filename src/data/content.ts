@@ -21,11 +21,7 @@ export const profile = {
   location: 'Lagos, Nigeria',
   portrait: '/images/portrait.jpg',
   logo: '/images/bbc-logo.jpg',
-  bio: `Adegbohun Temitope Emmanuel is an entertainment entrepreneur, artist relations professional and music executive. He is the founder of Billionaire Boys Crew (BBC), an entertainment outfit he built from the ground up — running events, coordinating artists and driving music releases from concept to release day.
-
-His work sits at the intersection of talent and business: negotiating venues, planning budgets, managing artists on the ground, and making sure every record and every show lands the way it was imagined.
-
-From street-rooted street anthems to event production, Temitope has spent his career building platforms where artists and audiences meet.`,
+  bio: `Adegbohun Temitope Emmanuel is an entertainment entrepreneur, artist relations professional and music executive. He is the founder of Billionaire Boys Crew (BBC), an entertainment outfit built to create opportunities across music, live events and artist development.`,
   email: 'temitopeemmanuel@gmail.com',
   phone: '+234 806 234 5146',
   socials: [
@@ -83,7 +79,7 @@ export const projects: MusicProject[] = [
     cover: '/images/cover-enu-oshey.jpg',
     tagline: 'A street-ready anthem built on loyalty and talk.',
     overview:
-      'Enu Oshey pairs OLW Maro with street-hop heavyweight Otega over a percussive, diary-of-the-streets beat. The record speaks to watching your circle and letting actions talk — a theme that resonated immediately with the core audience.',
+      'Enu Oshey pairs OLW Maro with street-hop heavyweight Otega over a percussive, diary-of-the-streets beat. The record speaks to watching your circle and letting actions talk — a theme that runs through the work of the BBC stable.',
     collaboration:
       'OLW Maro fronts the record while Otega delivers a feature verse that anchors the track in the street-hop tradition. BBC drove the collaboration from initial link-up through to release.',
     contribution: [
@@ -91,7 +87,12 @@ export const projects: MusicProject[] = [
       'Managed release planning and rollout for the single',
       'Positioned the record within the street-hop audience',
     ],
-    links: [],
+    links: [
+      {
+        label: 'Listen to Enu Oshey',
+        url: 'https://distrokid.com/hyperfollow/olawalemaro/enu-oshey-feat-otega',
+      },
+    ],
   },
   {
     id: 'aje',
@@ -103,15 +104,20 @@ export const projects: MusicProject[] = [
     cover: '/images/cover-aje.jpg',
     tagline: 'A pursuit-of-money record with hustle in its bones.',
     overview:
-      'Aje — "money" in Yoruba — is a hustler\u2019s anthem. Folahanmi carries the melody while Otega adds grit, making a record built for motivation and movement.',
+      'Aje — "money" in Yoruba — is a hustler’s anthem. Folahanmi carries the melody while Otega adds grit, making a record built for motivation and movement.',
     collaboration:
-      'Folahanmi and Otega trade verses over an Afro-street production, with BBC coordinating both artists and driving the single\u2019s journey to release day.',
+      'Folahanmi and Otega trade verses over an Afro-street production, with BBC coordinating both artists and driving the single’s journey to release day.',
     contribution: [
       'Brought Folahanmi and Otega together on the record',
       'Oversaw production coordination and timeline to release',
       'Ran the promotional push behind the single',
     ],
-    links: [],
+    links: [
+      {
+        label: 'Listen to Aje',
+        url: 'https://distrokid.com/hyperfollow/folahanmi/aje-feat-otega',
+      },
+    ],
   },
   {
     id: 'shey-you-get',
@@ -124,13 +130,18 @@ export const projects: MusicProject[] = [
     overview:
       'Shey You Get is System of Hype at full energy — a catchy, danceable record with a hook that sticks. It showcases the lighter, party-facing side of the BBC catalogue.',
     collaboration:
-      'A System of Hype record from the BBC stable — coordinated, branded and released under BBC\u2019s music arm.',
+      'A System of Hype record from the BBC stable — coordinated, branded and released under BBC’s music arm.',
     contribution: [
       'Coordinated the recording and release of the single',
       'Handled rollout and audience positioning',
       'Delivered the record as part of the BBC catalogue',
     ],
-    links: [],
+    links: [
+      {
+        label: 'Listen to Shey You Get',
+        url: 'https://bbc.fanlink.tv/SOHSYG',
+      },
+    ],
   },
 ];
 
@@ -153,51 +164,8 @@ export const eventCaseStudy = {
     '/images/event-6.jpg',
   ],
   description:
-    'Rave with BBC was the crew\u2019s flagship live event — a night bringing street-hop energy to Ikeja with a lineup of performers and DJs. From the first planning meeting to the last song of the night, the event was run end-to-end by the BBC team.',
-  timeline: [
-    {
-      phase: 'Planning',
-      title: 'Concept & Planning',
-      description:
-        'Defined the event concept, audience and date. Mapped out the full production plan — from venue requirements to artist bookings and promotional timeline.',
-    },
-    {
-      phase: 'Artists',
-      title: 'Artist Coordination',
-      description:
-        'Booked and coordinated the lineup — Otega, Olamma, Leebelle and DJs Soundnote and Kaycee — managing availability, performance terms and on-the-day logistics.',
-    },
-    {
-      phase: 'Venue',
-      title: 'Venue Negotiation',
-      description:
-        'Negotiated and secured Anchor Event Centre in Ikeja — handling terms, capacity planning and event-day access.',
-    },
-    {
-      phase: 'Budget',
-      title: 'Budget Planning',
-      description:
-        'Built and managed the event budget — balancing production costs, artist fees and marketing spend against ticket revenue targets.',
-    },
-    {
-      phase: 'Ticketing',
-      title: 'Ticketing & Tables',
-      description:
-        'Set up ticketing tiers including regular tickets and VIP tables, with direct booking channels for guests and supporters.',
-    },
-    {
-      phase: 'Promotion',
-      title: 'Promotion & Hype',
-      description:
-        'Ran the promotional campaign across social channels and street-level promotion, building momentum in the weeks leading to the event.',
-    },
-    {
-      phase: 'Execution',
-      title: 'Event Execution',
-      description:
-        'Delivered the event on the night — artist management, crowd coordination, and a full house from 8 PM till dawn.',
-    },
-  ],
+    'Rave with BBC was the crew’s flagship live event — a night bringing street-hop energy to Ikeja with a lineup of performers and DJs. From the first planning meeting to the last song of the night, the crew owned the full production.',
+  timeline: [],
 };
 
 export const galleryCaption: Record<string, string> = {
